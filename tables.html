@@ -12,7 +12,7 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark bg-gradient">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="index.html">Event Management</a>
             <!-- Sidebar Toggle-->
@@ -72,79 +72,92 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Events </h1>
+                        <h1 class="mt-4">Participants List</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Current Running</li>
+                            <li class="breadcrumb-item"><a href="index.html">Event page</a></li>
+                            <li class="breadcrumb-item active">Details</li>
                         </ol>
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="card" style="width:16rem;">
-                                        <img class="card-img-top img-fluid" src="https://picsum.photos/800/600" alt="card image">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Event 1</h4>
-                                            <p class="card-text">10:00am</p>
-                                            <a href="tables.html" class="btn btn-primary">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="card" style="width:16rem;">
-                                        <img class="card-img-top img-fluid" src="https://picsum.photos/800/600" alt="card image">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Event 2</h4>
-                                            <p class="card-text">11:30am</p>
-                                            <a href="tables.html" class="btn btn-primary">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="card" style="width:16rem;">
-                                        <img class="card-img-top img-fluid" src="https://picsum.photos/800/600" alt="card image">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Event 3</h4>
-                                            <p class="card-text">2:30pm</p>
-                                            <a href="tables.html" class="btn btn-primary">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="card" style="width:16rem;">
-                                        <img class="card-img-top img-fluid" src="https://picsum.photos/800/600" alt="card image">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Event 4</h4>
-                                            <p class="card-text">3:40pm</p>
-                                            <a href="tables.html" class="btn btn-primary">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Upcoming Events</li>
-                        </ol>
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card" style="width:16rem;">
-                                    <img class="card-img-top img-fluid" src="https://picsum.photos/800/600" alt="card image">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Event 1</h4>
-                                        <p class="card-text">10:30am</p>
-                                        <a href="tables.html" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                About the Event >>>>
+                                <a href="join.html" class="btn btn-primary">Join</a>
+                                .
                             </div>
                         </div>
-                        
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Participants
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Department</th>
+                                            <th>Year</th>
+                                            <th>Group tutor</th>
+                                            <th>Date</th>
+                                            <th>Ph no</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Department</th>
+                                            <th>Year</th>
+                                            <th>Group tutor</th>
+                                            <th>Date</th>
+                                            <th>Ph no</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>CSE</td>
+                                            <td>1</td>
+                                            <td>Nisha pk</td>
+                                            <td>2011/04/25</td>
+                                            <td>923727429</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>ECE</td>
+                                            <td>2</td>
+                                            <td>Nisha pk</td>
+                                            <td>2011/07/25</td>
+                                            <td>757474576</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>CSE</td>
+                                            <td>2</td>
+                                            <td>Smitha</td>
+                                            <td>2009/01/12</td>
+                                            <td>978544433</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cedric Kelly</td>
+                                            <td>NASB</td>
+                                            <td>3</td>
+                                            <td>Jitha</td>
+                                            <td>2012/03/29</td>
+                                            <td>785543789</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Airi Satou</td>
+                                            <td>ME</td>
+                                            <td>1</td>
+                                            <td>Abhilash</td>
+                                            <td>2008/11/28</td>
+                                            <td>907786543</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
@@ -162,9 +175,6 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
     </body>
